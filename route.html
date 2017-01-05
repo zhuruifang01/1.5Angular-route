@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <script src="angular/angular.min.js"></script>
+    <script src="angular/angular-route.min.js"></script>
+    <script src="angular/angular-animate.js"></script>
+    <script src="js/mui.js"></script>
+    <link rel="stylesheet" href="css/mui.min.css">
+    <script src="js/controllers.js"></script>
+    <script src="js/sevices.js"></script>
+    <script src="js/app.js"></script>
+</head>
+<body ng-app="myapp">
+    <div ng-view class="view-animate"> <!--其他页面在此页面显示的 容器-->
+    </div>
+
+    <nav class="mui-bar mui-bar-tab">
+        <a class="mui-tab-item mui-active">
+            <span class="mui-icon mui-icon-home"></span>
+            <span class="mui-tab-label">首页</span>
+        </a>
+        <a class="mui-tab-item">
+            <span class="mui-icon mui-icon-phone"></span>
+            <span class="mui-tab-label">电话</span>
+        </a>
+        <a class="mui-tab-item">
+            <span class="mui-icon mui-icon-email"></span>
+            <span class="mui-tab-label">邮件</span>
+        </a>
+        <a class="mui-tab-item">
+            <span class="mui-icon mui-icon-gear"></span>
+            <span class="mui-tab-label">设置</span>
+        </a>
+    </nav>
+</body>
